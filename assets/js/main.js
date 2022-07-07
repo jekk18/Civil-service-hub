@@ -9,7 +9,30 @@ $('.main-banner').slick({
   autoplaySpeed:4000
 });
 
- 
+$.js = function (el) {
+  return $('[data-js=' + el + ']')
+};
+
+function carousel() {
+$.js('timeline-carousel').slick({
+  infinite: false,
+  prevArrow: false,
+  nextArrow: false,
+  speed: 800,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }]
+});
+}
+
+carousel();
 
  
 
@@ -46,29 +69,4 @@ $(".name-box span").click(function(){
 
 
 
-  $.js = function (el) {
-    return $('[data-js=' + el + ']')
-};
-
-function carousel() {
-  $.js('timeline-carousel').slick({
-    infinite: false,
-    
-    prevArrow: false,
-    nextArrow: false,
-    
-    speed: 800,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 800,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }]
-  });
-}
-
-carousel();
+ 
