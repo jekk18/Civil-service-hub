@@ -9,16 +9,9 @@ $('.main-banner').slick({
   autoplaySpeed:4000
 });
 
-$('.offers-slider').slick({
-  nextArrow: false,
-  prevArrow: false,
-  // infinite: true,
-  prevArrow:false,
-  nextArrow:false,
-  dots: false,
-  autoplay:true,
-  autoplaySpeed:4000
-});
+ 
+
+ 
 
 $(".name-box span").click(function(){
     $(".person-box").toggleClass("height-active");
@@ -48,3 +41,34 @@ $(".name-box span").click(function(){
   $('.slider-click-h').click(function(){
     $(this).toggleClass('block');
   });
+
+
+
+
+
+  $.js = function (el) {
+    return $('[data-js=' + el + ']')
+};
+
+function carousel() {
+  $.js('timeline-carousel').slick({
+    infinite: false,
+    
+    prevArrow: false,
+    nextArrow: false,
+    
+    speed: 800,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }]
+  });
+}
+
+carousel();
