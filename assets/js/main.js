@@ -1,10 +1,8 @@
 $('.main-banner').slick({
-  nextArrow: false,
-  prevArrow: false,
-  // infinite: true,
+  infinite: true,
+  fade: true,
   prevArrow:false,
   nextArrow:false,
-  dots: false,
   autoplay:true,
   autoplaySpeed:4000
 });
