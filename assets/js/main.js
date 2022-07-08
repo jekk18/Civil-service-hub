@@ -31,9 +31,8 @@ $.js('timeline-carousel').slick({
     }]
 });
 }
-
 carousel();
-
+ 
  
 
 $(".name-box span").click(function(){
