@@ -61,7 +61,13 @@ $(".name-box span").click(function(){
   $('.slider-click-h').click(function(){
     $(this).toggleClass('block');
   });
-
+  $('.pagination li').click(function(){
+    $(this).addClass('pagintaion-active').siblings().removeClass('pagintaion-active');
+  });
+  $('.favourite-click-box').click(function(){
+    $(this).toggleClass('active-backgorund');
+    // $(this).children('.left-heart').toggleClass('favourite-block');
+  });
 
 
 
