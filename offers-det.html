@@ -350,23 +350,36 @@
                                                 </span>
                                             </div>
                                             <div class="upload-files">
-                                                <span class="v-upload">
+                                                <span class="v-upload" id="v-1">
                                                     <label>Attachment</label>
-                                                    <input type="file">
-                                                    <img src="" alt="">
+                                                    <label   id="upload-btn">
+                                                        <span>        
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="43.717" height="51.11" viewBox="0 0 43.717 51.11">
+                                                                <g id="Paper_Upload" data-name="Paper Upload" transform="translate(1.501 1.5)">
+                                                                <path id="Stroke_1" data-name="Stroke 1" d="M27.454,0H10.039A10,10,0,0,0,0,9.769V37.9A9.969,9.969,0,0,0,9.751,48.078c.1,0,.194,0,.288,0H30.951A10.127,10.127,0,0,0,40.716,37.9V13.821Z" transform="translate(0 0.031)" fill="none" stroke="#1b1b1b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+                                                                <path id="Stroke_3" data-name="Stroke 3" d="M0,0V7.621a6.744,6.744,0,0,0,6.725,6.746h7.21" transform="translate(26.769)" fill="none" stroke="#1b1b1b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+                                                                <path id="Stroke_5" data-name="Stroke 5" d="M.5,0V15.825" transform="translate(18.849 18.753)" fill="none" stroke="#1b1b1b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+                                                                <path id="Stroke_7" data-name="Stroke 7" d="M12.278,6.169,6.139,0,0,6.169" transform="translate(13.212 18.754)" fill="none" stroke="#1b1b1b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+                                                                </g>
+                                                            </svg>
+                                                        </span>
+                                                        <p id="text">Browse File</p>
+                                                    </label>
+                                                    <input type="file" id="upload" name="upload">  
                                                     <div class="download-file">
-                                                        <a href="#" download>Download</a>
+                                                        <a href="#" download> Download </a>
                                                     </div>
                                                 </span>
+                                                 
                                                 <span class="v-upload">
                                                     <label>Additional Information</label>
                                                     <textarea></textarea>
                                                 </span>
                                             </div>
                                         </form>
-                                        <div class="submit-btn mg-t-6">
+                                        <button type="submit" class="submit-btn mg-t-6 active-btn">
                                             Submit
-                                        </div>
+                                        </button>
                                     </div>
                                 </div>  
                             </div>
@@ -489,6 +502,8 @@
         </div>
      </section>
     
+     
+
 
     </main>
 

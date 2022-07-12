@@ -70,6 +70,21 @@ $(".name-box span").click(function(){
   });
 
 
+  $('.register-btn').click(function(){
+    $('.offers-register').addClass('show');
+  });
 
+{
+  const input  = document.getElementById('upload');
+  const text = document.getElementById('text');
+  const btn = document.getElementById('uploadd-btn');
+  const labelUp = document.getElementById('v-1');
 
+  input.addEventListener('change', function(){
+    const path = input.value.split("\\");
+    const filename = path[path.length - 1];
+    text.innerText = filename ? filename : "Browse file";
+    labelUp.classList.add('v-uploaded');
+  });
+}
  
