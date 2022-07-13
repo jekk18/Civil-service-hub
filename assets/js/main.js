@@ -69,6 +69,9 @@ $(".name-box span").click(function(){
     // $(this).children('.left-heart').toggleClass('favourite-block');
   });
 
+  $('.fav-click-box-2').click(function(){
+    $(this).parents('.favourite-click-box-2').toggleClass('active-bg-2');
+  });
 
   $('.register-btn').click(function(){
     $('.offers-register').addClass('show');
