@@ -35,6 +35,7 @@ carousel();
 
 $(".name-box span").click(function(){
     $(".person-box").toggleClass("height-active");
+    $(".login-box").toggleClass("shadow-effect");
   });
 
   $('.count').each(function () {
@@ -77,6 +78,77 @@ $(".name-box span").click(function(){
     $('.offers-register').addClass('show');
   });
 
+//  pop boxes
+
+// log in
+$(".log-in-title h3").click(function(){
+  $('.pop-box').addClass('active-pop-box');
+  $('.login-pop-box').addClass('active-login-pop');
+});
+// log in
+//forgot pas
+$(".forgot-pas h3").click(function(){
+  $('.forgot-pas-box').addClass('active-forgot-password');
+  $('.login-pop-box').removeClass('active-login-pop');
+});
+// forgot pas
+//  change password
+$(".r-r-info h4").click(function(){
+  $('.pop-box').addClass('active-pop-box');
+  $('.change-password-pop').addClass('active-change-password');
+});
+$(".close-btn").click(function(){
+  $(this).parents('.pop-box').removeClass('active-pop-box');
+  $(this).parents('.change-password-pop').removeClass('active-change-password');
+  $(this).parents('.login-pop-box').removeClass('active-login-pop');
+  $('.forgot-pas-box').removeClass('active-forgot-password');
+});
+//  change password
+
+
+// pop boxes
+
+  // $(document).ready(function() {
+  //   var oldVal;
+  //   var newVal;
+  //   $(".p-input-item input").click(function() {
+  //     oldVal = $(this).val();
+  //     console.log(oldVal);
+      
+  //   });
+  //   $(".p-input-item input").keyup(function() {
+  //     newVal = $(this).val();
+  //     console.log(newVal);
+  //     if(oldVal === newVal){
+  //       console.log('yes')
+  //     }else{
+  //       console.log('no')
+  //     }
+  //   });
+     
+  // })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {
   const input  = document.getElementById('upload');
   const text = document.getElementById('text');
@@ -90,4 +162,5 @@ $(".name-box span").click(function(){
     labelUp.classList.add('v-uploaded');
   });
 }
+ 
  
