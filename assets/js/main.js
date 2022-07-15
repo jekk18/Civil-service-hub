@@ -86,6 +86,16 @@ $(".log-in-title h3").click(function(){
   $('.login-pop-box').addClass('active-login-pop');
 });
 // log in
+// register
+$(".log-in-form span a").click(function(){
+  $('.register-pop-box').addClass('active-register-box');
+  $('.login-pop-box').removeClass('active-login-pop');
+});
+$(".register-btn-box h2 span").click(function(){
+  $('.register-pop-box').removeClass('active-register-box');
+  $('.login-pop-box').addClass('active-login-pop');
+});
+// register
 //forgot pas
 $(".forgot-pas h3").click(function(){
   $('.forgot-pas-box').addClass('active-forgot-password');
@@ -102,6 +112,7 @@ $(".close-btn").click(function(){
   $(this).parents('.change-password-pop').removeClass('active-change-password');
   $(this).parents('.login-pop-box').removeClass('active-login-pop');
   $('.forgot-pas-box').removeClass('active-forgot-password');
+  $('.register-pop-box').removeClass('active-register-box');
 });
 //  change password
 

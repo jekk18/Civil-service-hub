@@ -2910,7 +2910,7 @@
     border-bottom-left-radius: 9px;
 }
 .right-log-side{
-    padding: 80px 130px;
+    padding: 65px 130px;
     display: flex;
     flex-direction: column;
     width: 572px;
@@ -2939,7 +2939,7 @@
     display: flex;
     flex-direction: column;
 }
-.log-in-ite:first-child{
+.log-in-item:first-child{
     margin-bottom: 30px;
 }
 .log-in-item label,.forgot-password-form label{
@@ -3056,6 +3056,113 @@
     margin-top: 10px;
 }
 /* pop alert */
+
+/* Register pop */
+
+.register-pop-box{
+    width: 1160px;  
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 70px 90px;
+    background-color: #fff;
+    display: none;
+    border-radius: 9px;
+}
+.close-btn-2{
+    position: absolute;
+    top: 70px;
+    right: 90px;
+}
+.register-pop-box h1{
+    font-size: 20px;
+    font-weight: bold;
+    color: #3063AA;
+    text-transform: capitalize;
+    font-family: 'Segoe UI';
+    margin-bottom: 50px;
+}
+.registration-form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 40px;
+    margin-bottom: 45px;
+}
+.register-input-box{
+    width: calc((100% / 3) - 35px );
+    display: flex;
+    flex-direction: column;
+}
+.register-input-box label{
+    color: #1B1B1B;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-family: 'Calibri';
+    margin-bottom: 11px;
+    width: fit-content;
+}
+.register-input-box input{
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    appearance: none;
+    border-radius: 25px;
+    background-color: #F8FAFB;
+    padding-left: 25px;
+    color: #1B1B1B;
+    font-size: 18px;
+    font-family: 'Calibri';
+}
+.register-btn-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.register-btn-box h2{
+    color: #1B1B1B;
+    font-size: 18px;
+    font-family: 'Calibri'; 
+    text-transform: capitalize;
+}
+.register-btn-box h2 span{
+    color: #3063AA;
+    font-weight: bold;
+    cursor: pointer;
+}
+.register-btn-box button{
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #1B1B1B;
+    color: #1B1B1B;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Segoe UI';
+    transition: 0.3s;
+    background-color: transparent;
+}
+.register-btn-box button:hover{
+    background-color: #3063AA;
+    color: #fff;
+    border: 2px solid #3063AA;
+}
+.req-lab{
+    position: relative;
+}
+.req-lab::after{
+    position: absolute;
+    content: "*";
+    top: -3px;
+    right: -9px;
+    color: #CE5748;
+}
+/* Register pop */
 /* Pop -boxes */
 
 
@@ -3069,5 +3176,9 @@
     display: flex;
 }
 .active-forgot-password{
+    display: flex;
+}
+
+.active-register-box{
     display: flex;
 }
