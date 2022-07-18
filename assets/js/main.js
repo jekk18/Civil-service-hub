@@ -16,7 +16,7 @@ $.js('timeline-carousel').slick({
   infinite: false,
   prevArrow: false,
   nextArrow: false,
-  speed: 800,
+  speed: 1000,
   slidesToShow: 1,
   slidesToScroll: 1,
   responsive: [
@@ -49,7 +49,7 @@ $(".name-box span").click(function(){
         }
     });
   });
-
+   
   $('.h-circle').click(function(){
     $(this).toggleClass('block');
   });
@@ -115,30 +115,40 @@ $(".close-btn").click(function(){
   $('.register-pop-box').removeClass('active-register-box');
 });
 //  change password
-
-
 // pop boxes
 
-  // $(document).ready(function() {
-  //   var oldVal;
-  //   var newVal;
-  //   $(".p-input-item input").click(function() {
-  //     oldVal = $(this).val();
-  //     console.log(oldVal);
-      
-  //   });
-  //   $(".p-input-item input").keyup(function() {
-  //     newVal = $(this).val();
-  //     console.log(newVal);
-  //     if(oldVal === newVal){
-  //       console.log('yes')
-  //     }else{
-  //       console.log('no')
-  //     }
-  //   });
-     
-  // })
 
+// profile info change
+
+// $(document).ready(function() {
+//   for(var i = 0; i<= $(".p-input-item input").length; i++){
+//     var inp = $(".p-input-item");
+//     $(inp[i]).children('input').val("item " + i);
+//   }
+// })
+
+
+
+//   $(document).ready(function() {
+//     var oldVal;
+//     var newVal;
+//     $(".p-input-item input").click(function() {
+//       oldVal = $(this).val();
+//       console.log(oldVal);
+//     });
+//     $(".p-input-item input").keyup(function() {
+//       newVal = $(this).val();
+//       console.log(newVal);
+//       if(oldVal !== newVal){
+//         $('.person-info-save').addClass('btn-active')
+//       }else{
+//         $('.person-info-save').removeClass('btn-active')
+//       }
+//     });
+     
+//   })
+
+// profile info change
 
 
 
