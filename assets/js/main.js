@@ -149,8 +149,7 @@ $(".close-btn").click(function(){
 //   })
 
 // profile info change
-
-
+ 
 
 
 

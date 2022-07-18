@@ -467,7 +467,7 @@
     color: #1B1B1B;
     font-size: var(--read-more);
     padding: 13px 31px;
-    border-radius: 25px;
+    border-radius: 30px;
     border: 2px solid #1B1B1B;
     transition: 0.3s;
     font-family: 'Segoe UI';
@@ -1573,6 +1573,7 @@
     margin-bottom: 10px;
     font-family: 'Calibri';
     color: #fff;
+    text-align: start;
 }
 .offers-link-item .text-box .text{
     font-size: var(--text-tt);
@@ -1600,8 +1601,9 @@
 }
 
 .offers-link-item .text-box .get-involved:hover{
-    background-color: #3063AA;
-    border: 2px solid #3063AA;
+    background-color: #fff;
+    border: 2px solid #fff;
+    color: #1B1B1B;
 }
 /* Offers */
 /* offers det */
@@ -2332,6 +2334,7 @@
     font-family: 'Segoe UI';
     margin-bottom: 17px;
     text-transform: capitalize;
+    text-align: left;
 }
 .result-item .text{
     max-height: 78px;
