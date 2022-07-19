@@ -161,14 +161,6 @@ $(".close-btn").click(function(){
 
 
 
-
-
-
-
-
-
-
-
 {
   const input  = document.getElementById('upload');
   const text = document.getElementById('text');

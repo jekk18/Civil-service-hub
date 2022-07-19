@@ -1081,7 +1081,16 @@
   .offers-box{
     height: 660px;
     width: 115%;
-    
+    position: relative;
+  }
+  .offers-box::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    top: 0;
+    left: -100%;
   }
 .offers-slider-item{
     width: 100%;
@@ -1179,7 +1188,7 @@
   position: relative;
   overflow: hidden;
 }
-.timeline-carousel:after{
+/* .timeline-carousel:after{
   content: "";
   position: absolute;
   display: block;
@@ -1189,10 +1198,10 @@
   background-color: #fff;
   z-index: 3;
   width: 6.9444%;
-}
-.timeline-carousel:after {
+} */
+/* .timeline-carousel:after {
   left: 0;
-}
+} */
 .timeline-carousel:before {
   right: 0;
   opacity: 0;
