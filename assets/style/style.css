@@ -3137,6 +3137,9 @@
     font-size: 18px;
     font-family: 'Calibri';
 }
+.register-input-box input[type="number"]::-webkit-inner-spin-button{
+    appearance: none;
+} 
 .register-btn-box{
     width: 100%;
     display: flex;
