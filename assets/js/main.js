@@ -86,6 +86,7 @@ $(".log-in-title h3").click(function(){
   $('.login-pop-box').addClass('active-login-pop');
 });
 // log in
+
 // register
 $(".log-in-form span a").click(function(){
   $('.register-pop-box').addClass('active-register-box');
@@ -96,12 +97,14 @@ $(".register-btn-box h2 span").click(function(){
   $('.login-pop-box').addClass('active-login-pop');
 });
 // register
+
 //forgot pas
 $(".forgot-pas h3").click(function(){
   $('.forgot-pas-box').addClass('active-forgot-password');
   $('.login-pop-box').removeClass('active-login-pop');
 });
 // forgot pas
+
 //  change password
 $(".r-r-info h4").click(function(){
   $('.pop-box').addClass('active-pop-box');
