@@ -3,7 +3,10 @@
         --logo-font: 18px;
     }
     .logo-img{
-        margin-right: 60px;
+        margin-right: 40px;
+    }
+    .logo-title a{
+        line-height: 28px;
     }
     .search-box-header form{
         width: 265px;
@@ -19,7 +22,11 @@
         padding-right: 8%;
     }
     .banner-text{
-        max-width: 90%;
+        max-width: 82%;
+        line-height: 38px;
+    }
+    html:lang(ka) .banner-text{
+        max-width: 80%;
     }
     .right-circle {
         width: 222px;
@@ -141,6 +148,15 @@
     .footer-socials{
         margin-bottom: 40px;
     }
+    .important-title{
+        margin-bottom: 40px;
+    }
+    .click-heart{
+        right: 25px;
+    }
+    .footer-menu-links a{
+        width: calc((100%-120px)/4);
+    }
 }
 
 @media (max-width: 1199px){
@@ -148,6 +164,13 @@
         --count-font: 30px;    
         --count-text-font: 13px;
         --text-tt: 16px;
+        --padding: 60px 0;
+        --padding-t: 60px;
+        --padding-b: 60px;
+        --text-t: 18px;
+        --banner-text: 20px;
+        --title-font: 26px;
+        --nav-fonts: 16px;
     }
     .top-header {
         padding: 20px 0;
@@ -155,14 +178,37 @@
     .logo-title{
         display: none;
     }
+    html:lang(ka) .join-btn a{
+        font-size: 16px;
+    }
+    .navigation-box ul{
+        gap: 30px;
+    }
+    .bottom-header{
+        gap: 30px;
+    }
     .search-box-header form {
         width: 260px;
     }
+    html:lang(ka) .banner-text {
+        max-width: 70%;
+    }
     .about-box .text{
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
     .important-title{
         margin-bottom: 40px;
+    }
+    .important-title h1{
+        line-height: 28px;
+    }
+    .offers-text h2 {
+        line-height: 26px;
+        max-height: 25px;
+        margin-bottom: 14px;
+    }
+    .click-heart{
+        right: 15px;
     }
     .counter-items .item {
         width: 140px;
@@ -230,5 +276,534 @@
         max-width: 210px;
         height: 100px;
         margin-bottom: 40px;
+    }
+    .footer-menu-links{
+        gap: 18px 0;
+    }
+    .footer-menu-links a{
+        width: calc((100%-120px)/3);
+    }
+    html:lang(ka) .create span{
+        font-size: 16px;
+    }
+}
+
+@media(max-width:991px){
+    :root{
+        --count-font: 30px;    
+        --count-text-font: 13px;
+        --text-tt: 16px;
+        --padding: 60px 0;
+        --padding-t: 60px;
+        --padding-b: 60px;
+        --slider-title: 20px;
+        --slider-text: 18px;
+        --text-t: 18px;
+        --banner-text: 18px;
+        --title-font: 24px;
+        --nav-fonts: 16px;
+        --banner-height: 400px;
+    }
+    .offerssection {
+        margin-bottom: 60px;
+    }
+    html:lang(ka) .join-btn a, html:lang(ka) .banner-text-side span, html:lang(ka) .about-box a, html:lang(ka) .see-all, html:lang(ka) .create span, html:lang(ka) .register-btn, html:lang(ka) .submit-btn, html:lang(ka) .send-btn, html:lang(ka) .btns-fav .view-link, html:lang(ka) .offers-link-item .text-box .get-involved, html:lang(ka) .register-btn-box button{
+        font-size: 16px;
+    }
+    header{
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        background-color: #fff;
+    }
+    .logo-img{
+        width: 130px;
+        height: 70px;
+    }
+    .div-left-side{
+        display: none;
+    }
+    .b-header{
+        display: none;
+    }
+     
+    .main-slider{
+        width: 100%;
+        height: 400px;
+    }
+    .banner-text{
+        max-width: 70%;
+        line-height: 26px;
+        max-height: 52px;
+        overflow: hidden;
+    }
+    .about-box{
+        padding: 0 3%;
+    }
+    .important-title {
+        margin-bottom: 30px;
+    }
+    .about-box .text {
+        margin-bottom: 30px;
+    }
+    .left-circle {
+        width: 220px;
+        height: 220px;
+        top: -98px;
+        left: -161px;
+    }
+    .right-circle {
+        right: -155px;
+        width: 200px;
+        height: 200px;
+        top: 128px;
+    }
+    .timeline-carousel__item-wrapper .slick-current {
+        width: 700px!important;
+    }
+    .timeline-carousel__item-wrapper .slick-current .offers-slider-item {
+        height: 460px;
+    }
+    .timeline-carousel__image {
+        padding-right: 30px;
+    }
+    .timeline-carousel__item-wrapper .offers-slider-item {
+        margin-top: 50px;
+        height: 360px;
+    }
+    .offers-box {
+        height: 470px;
+    }
+    .see-link{
+        margin-top: 50px;
+    }
+    .slider-time .t-times{
+        padding: 15px 35px;
+        margin-right: 30px;
+    }
+    .slider-time{
+        top: 35px;
+        right: 40px;
+    }
+    .right-news{
+        margin-top: 40px;
+    }
+    .research-img {
+        height: 380px;
+    }
+    .research-img img {
+        width: 91%;
+    }
+    .create{
+        margin-top: 40px;
+    }
+    .footer-logo {
+        max-width: 190px;
+        height: 81px;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width:767px){
+    :root{
+        --count-font: 30px;    
+        --count-text-font: 13px;
+        --text-tt: 16px;
+        --padding: 40px 0;
+        --padding-t: 40px;
+        --padding-b: 40px;
+        --slider-title: 18px;
+        --slider-text: 16px;
+        --text-t: 18px;
+        --banner-text: 18px;
+        --title-font: 22px;
+        --nav-fonts: 16px;
+        --banner-height: 400px;
+        --about-text: 18px;
+    }
+    .offerssection {
+        margin-bottom: 40px;
+    }
+    html:lang(ka) .join-btn a, html:lang(ka) .banner-text-side span, html:lang(ka) .about-box a, html:lang(ka) .see-all, html:lang(ka) .create span, html:lang(ka) .register-btn, html:lang(ka) .submit-btn, html:lang(ka) .send-btn, html:lang(ka) .btns-fav .view-link, html:lang(ka) .offers-link-item .text-box .get-involved, html:lang(ka) .register-btn-box button {
+        font-size: 14px;
+    }
+    .banner-text-box {
+        padding: 20px 4%;
+        height: initial;
+    }
+    .banner-text-side{
+        flex-direction: column;
+        justify-content: initial;
+    }
+    .banner-text {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+    html:lang(ka) .banner-text {
+        max-width: 90%;
+    }
+    .banner-text-side span{
+        padding: 10px 28px;
+    }
+    .about-box{
+        padding: 0;
+    }
+    .about-box a{
+        padding: 10px 28px;
+    }
+    .about-box .text{
+        line-height: 28px;
+    }
+    .counter-items .item {
+        width: 164px;
+        height: 164px;
+    }
+    .counter-items {
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    .pp-2{
+        padding: 130px 0;
+    }
+    .left-circle{
+        top: -50px;
+        left: -110px;
+    }
+    .right-circle{
+        bottom: -50px;
+        top: initial;
+        right: -85px;
+    }
+    .timeline-carousel__item-wrapper .slick-current {
+        width: 520px!important;
+    }
+    .timeline-carousel__item-wrapper .slick-current .offers-slider-item {
+        height: 380px;
+    }
+    .timeline-carousel__image {
+        padding-right: 20px;
+    }
+    .timeline-carousel__item-wrapper .offers-slider-item {
+        margin-top: 40px;
+        height: 300px;
+    }
+    .offers-box {
+        height: 386px;
+    }
+    .slider-time .t-times {
+        padding: 10px 28px;
+        margin-right: 20px;
+        font-size: 14px;
+    }
+    .slider-time {
+        top: 25px;
+        right: 30px;
+    }
+    .guestpop{
+        padding: 8px 6px 5px 6px;
+    }
+    .offers-text {
+        padding: 20px 30px 20px 30px;
+    }
+    .offers-text h2{
+        margin-bottom: 10px;
+    }
+    .offers-text .text{
+        line-height: 22px;
+        max-height: 44px;
+    }
+    .research-img {
+        height: 320px;
+    }
+    .research-img img {
+        width: 88%;
+    }
+    .gap-flex {
+        gap: 30px 0;
+    }
+    .contact-links{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .address{
+        width: 100%;
+    }
+    .company-contact{
+        width: 100%;
+        margin-left: 0;
+    }
+    .footer-socials{
+        margin-bottom: 30px;
+    }
+    .create{
+        margin-top: 30px;
+        flex-direction: column;
+    }
+}
+
+
+@media(max-width:575px){
+    :root{
+        --count-font: 34px;    
+        --count-text-font: 14px;
+        --text-tt: 16px;
+        --padding: 35px 0;
+        --padding-t: 35px;
+        --padding-b: 35px;
+        --slider-title: 12px;
+        --slider-text: 12px;
+        --text-t: 18px;
+        --banner-text: 14px;
+        --title-font: 22px;
+        --nav-fonts: 16px;
+        --banner-height: 219px;
+        --about-text: 14px;
+        --banner-raed-more: 12px;
+        --title-font: 16px;
+        --read-more: 12px;
+        --see-all: 12px;
+        --text-tt: 12px;
+    }
+    .offerssection {
+        margin-bottom: 35px;
+    }
+    .logo-img {
+        width: 115px;
+        height: 59px;
+        margin-right: 0;
+    }
+    .main-slider{
+        height: 341px;
+    }
+    .banner-text {
+        max-width: 80%;
+        margin-bottom: 14px;
+        line-height: 20px;
+        max-height: 38px;
+    }
+    .banner-text-side span {
+        padding: 8px 22px;
+        line-height: 14px;
+    }
+    .important-title {
+        margin-bottom: 20px;
+    }
+    .important-title h1 {
+        line-height: 18px;
+        max-height: 36px;
+        padding:  0 20px;
+    }
+    .about-box .text {
+        line-height: 22px;
+        margin-bottom: 25px;
+    }
+    .about-box a{
+        line-height: 14px;
+        padding: 11px 23px;
+    }
+    .banner-text-box {
+        padding: 18px 4%;
+        height: initial;
+    }
+    .counter-items{
+        gap: 18px 15px;
+    }
+
+    .left-circle .circle .dot:after {
+        left: 43px;
+        width: 30px;
+        height: 30px;
+    }
+    .right-circle .circle .dot:after {
+        left: 28px;
+        width: 30px;
+        height: 30px;
+    }
+    .pp-2{
+        padding-top: 130px;
+        padding-bottom: 179px;
+    }
+    .left-circle {
+        top: -80px;
+        left: -140px;
+    }
+
+    .timeline-carousel__item-wrapper .slick-current {
+        width: 336px!important;
+    }
+    .timeline-carousel__item-wrapper .slick-current .offers-slider-item {
+        height: 188px;
+    }
+    .timeline-carousel__image {
+        padding-right: 30px;
+    }
+    .timeline-carousel__item-wrapper .offers-slider-item {
+        margin-top: 13px;
+        height: 162px;
+    }
+    .offers-box {
+        height: 195px;
+    }
+    .offers-text .text{
+        max-height: 0;
+    }
+    .offers-text {
+        padding: 13px 15px 13px 20px;
+    }
+    .offers-text h2 {
+        margin-bottom: 0;
+        line-height: 18px;
+        max-height: 36px;
+    }
+    .slider-time .t-times {
+        padding: 9px 14px;
+        margin-right: 10px;
+        font-size: 9px;
+        line-height: 7px;
+    }
+    .slider-time {
+        top: 15px;
+        right: 15px;
+    }
+    .guestpop {
+        padding: 2px 4px 2px 4px;
+    }
+    .guestpop svg{
+        height: 20px;
+        width: 20px;
+    }
+    .see-all{
+        line-height: 14px;
+        padding: 10px 30px;
+    }
+    .left-img-box .img-box {
+        height: 249px;
+    }
+    .time p {
+        line-height: 12px;
+        font-size: 9px;
+        margin-left: 8px;
+    }
+    .h-circle{
+        height: 32px;
+        width: 32px;
+    }
+    .h-circle svg{
+        height: 20px;
+        width: 20px;
+    }
+    .time{
+        top: 15px;
+        right: 25px;
+    }
+    .time span{
+        margin-top: -3px;
+    }
+    .time span svg{
+        height: 17px;
+        width: 17px;
+    }
+    .left-img-box .img-text .text-box h2{
+        font-size: 10px;
+        line-height: 15px;
+        max-height: 31px;
+    }
+    .left-img-box .img-text {
+        padding: 17px 20px;
+    }
+    .left-img-box .img-text .text-box .text{
+        line-height: 15px;
+        max-height: 45px;
+        font-size: 10px;
+    }
+    .right-news {
+        margin-top: 20px;
+        gap: 10px;
+    }
+    .right-news .news-item{
+        width: calc((100% - 10px)/2);
+    }
+    .news-link-side .img-r {
+        height: 118px;
+    }
+    .left-img-box .img-text .text-box h2{
+        margin-bottom: 9px;
+    }
+    .news-link-side h2{
+        line-height: 18px;
+        height: 56px;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    .news-link-side .text {
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 12px;
+        height: 54px;
+        margin-bottom: 15px;
+    }
+    .time2{
+        margin-top: 16px;
+    }
+    .time2 .left-t span{
+        margin-top: -3px;
+    }
+    .time2 .left-t span svg{
+        width: 20px;
+        height: 20px;
+    }
+    .time2 .left-t p{
+        margin-left: 9px;
+        font-size: 12px;
+        line-height: 13px;
+    }
+    .unauthbutt svg{
+        height: 27px;
+        width: 25px;
+    }
+    .see-link {
+        margin-top: 30px;
+    }
+    .footer-logo {
+        max-width: 211px;
+        height: 95px;
+        margin-bottom: 22px;
+    }
+    .footer-contact-info h2{
+        font-size: 16px;
+        line-height: 21px;
+        margin-bottom: 10px;
+    }
+    .address, .company-contact span{
+        font-size: 14px;
+    }
+    .footer-socials {
+        margin-bottom: 24px;
+    }
+    .footer-menu-links a{
+        height: 17px;
+        font-size: 14px;
+    }
+    .research-img {
+        height: 230px;
+    }
+    .research-img img {
+        width: 100%;
+    }
+    .download-pos {
+        top: 195px;
+        right: initial;
+        width: 55px;
+        height: 55px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .research-link-side h2 {
+        padding-right: 0;
+        line-height: 18px;
+        margin-top: 26px;
+        max-height: 54px;
+        margin-bottom: 10px;
     }
 }
