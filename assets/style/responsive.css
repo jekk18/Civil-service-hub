@@ -51,6 +51,7 @@
     .research-img{
         height: 410px;
     }
+
 }
 @media (max-width: 1399px){
     :root {
@@ -304,18 +305,335 @@
         --nav-fonts: 16px;
         --banner-height: 400px;
     }
+    header{
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        background-color: #fff;
+       
+    }
+    .burger-overflow{
+        overflow-x: hidden;
+        width: 100%;
+    }
+    .burger-box {
+        display: initial;
+        left: 100%;
+        transition: 0.4s;
+        width: 100%;
+        position: absolute;
+        background-color: #fff;
+        top: 110px;
+        z-index: 991;
+    }
+    .burger-left{
+        left: 0;
+    }
+    .burger-icon{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4px;
+        cursor: pointer;
+        width: fit-content;
+        height: 30px;
+    }
+    .burger-line
+    {
+        width: 30px;
+        height: 3px;
+        background-color: #3063AA;
+        border-radius: 2px;
+        transition: 0.3s;
+    }
+    .burger-line:first-child{
+        width: 20px;
+        transform: translateX(10px);
+    }
+    
+    .active-burger .burger-line:first-child{
+        width: 30px;
+        transform: rotate(45deg) translate(2px, 3px);
+        background-color: #1B1B1B;
+    }
+    .active-burger .burger-line:last-child{
+        width: 30px;
+        transform: rotate(-45deg) translate(1px, -3px);
+        background-color: #1B1B1B;
+    }
+    .active-burger .burger-line:nth-child(2){
+        background-color: #1B1B1B;
+        display: none;
+    }
+    
+    .burger-menu{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .burger-logo-box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+    .b-logo-text a{
+        font-size: 16px;
+        font-weight: bold;
+        line-height: var(--logo-title-line);
+        font-family: 'Segoe UI';
+        color: #646464;
+        line-height: 19px;
+    }
+    .b-logo-text a span{
+        color: #3063AA;
+    }
+    .b-logo-img{
+        width: 150px;
+        height: 80px;
+        margin-right: 40px;
+    }
+    .b-logo-img img{
+        width: 100%;
+        height: 100%;
+    }
+    .burger-form{
+        width: 100%;
+        position: relative;
+        margin-bottom: 40px;
+    }
+    .burger-form input{
+        width: 100%;
+        height: 50px;
+        background-color: #FBFBFB;
+        outline: none;
+        border: none;
+        appearance: none;
+        border-radius: 25px;
+        padding-left: 65px;
+        font-size: 18px;
+        font-family: 'Calibri';
+        color: #1B1B1B;
+        line-height: 26px;
+        border: 1px solid transparent;
+    }
+    .burger-form input:focus-visible{
+        border: 1px solid #3063AA;
+    }
+    .burger-form input::placeholder{
+        color: #707070;
+        font-family: 'Calibri';
+    }
+    .burger-form button{
+        background: transparent;
+        border: none;
+        position: absolute;
+        top: 0;
+        left: 20px;
+        height: 100%;
+    }
+    .burger-menu-links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .b-person-submenu{
+        display: flex;
+        flex-direction: column;  
+    }
+    .b-person-info{
+        width:720px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 12px;
+    }
+    .b-pesron-sub-box{
+        display: flex;
+        flex-direction: column;
+        width: 340px;
+        align-items: center;
+    }
+    .b-pesron-sub-box li{
+        list-style: none;
+        width: 340px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+    }
+    .b-pesron-sub-box li p{
+        color: #3063AA;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: 'Calibri';
+        position: relative;
+        width: fit-content;
+        padding-bottom: 2px;
+    }
+    .b-pesron-sub-box li p::after{
+        content: "";
+        position: absolute;
+        width: 110%;
+        left: -5%;
+        bottom: 0;
+        background-color: #1B1B1B;
+        height: 2px;
+        border-radius: 10px;
+    }
+    .b-pesron-sub-box li span{
+        position: absolute;
+        right: 40px;
+        top: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotate(180deg);
+        transition: 0.3s;
+    }
+    .active-height li span{
+        transform: rotate(0);
+    }
+    .b-person-submenu{
+        margin-top: 20px;
+        padding-left: 10%;
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+    .active-height .b-person-submenu{
+        max-height: 300px;
+    }
+    .b-person-submenu a{
+        color: #1B1B1B;
+        font-size: 18px;
+        transition: 0.3s;
+        font-family: 'Calibri';
+        margin-bottom: 20px;
+    }
+    .b-person-submenu a:last-child{
+        color: #D60000;
+    }
+    .b-person-submenu a:hover{
+        color: #3063AA;
+    }
+    .burger-ul{
+        width: 340px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 23px;
+    }
+    .b-li{
+        width: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .b-a{
+        color: #1B1B1B;
+        font-size: 18px;
+        transition: 0.3s;
+        font-family: 'Calibri';
+        font-weight: bold;
+    }
+    .b-a:hover, .b-sub-child-menu a:hover{
+        color: #3063AA;
+    }
+    .b-links .click-arrow{
+        position: absolute;
+        right: 40px;
+        top: 8px;
+        cursor: pointer;
+    }
+    .b-links .click-arrow span{
+        transform: rotate(180deg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+    }
+    .active-submenu-ar .click-arrow span{
+        transform: rotate(0);
+    }
+    .b-sub-child-menu{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        /* margin-top: 20px; */
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.3s;
+        gap: 17px;
+        background-color: #fff;
+    }
+    .active-submenu-ar .b-sub-child-menu{
+        margin-top: 20px;
+        max-height: 200px;
+        overflow: initial;
+    }
+    .b-sub-child-menu a{
+        font-size: 18px;
+        transition: 0.5s;
+        font-family: 'Calibri';
+        color: #1B1B1B;
+        opacity: 0;
+    }
+    .active-submenu-ar .b-sub-child-menu a{
+        opacity: 1;
+    }
+    .b-li:last-child .b-a{
+        color: #3063AA;
+        font-weight: 400;
+    }
+    .burger-join-btn{
+        margin-top: 40px;
+    }
+    .burger-join-btn a{
+        font-weight: 400;
+        padding: 10px 26px;
+    }
+    .b-log-in-box{
+        margin-top: 35px;
+        margin-bottom: 20px;
+    }
+    .b-log-in-box a{
+        font-size: 18px;
+        font-weight: bold;
+        color: #3063AA;
+        text-transform: uppercase;
+        font-family: 'Calibri';
+        line-height: 19px;
+    }
+    .b-lang-box{
+        margin-bottom: 15px;
+    }
+    .b-lang-box a{
+        font-size: 16px;
+        text-transform: uppercase;
+        font-family: 'Calibri';
+        color: #1B1B1B;
+    }
+    .b-lang-box a.lang-bold{
+        font-weight: bold;
+    }
+    .opacity-logo{
+        opacity: 0;
+        transition: 0.3s;
+    }
     .offerssection {
         margin-bottom: 60px;
     }
     html:lang(ka) .join-btn a, html:lang(ka) .banner-text-side span, html:lang(ka) .about-box a, html:lang(ka) .see-all, html:lang(ka) .create span, html:lang(ka) .register-btn, html:lang(ka) .submit-btn, html:lang(ka) .send-btn, html:lang(ka) .btns-fav .view-link, html:lang(ka) .offers-link-item .text-box .get-involved, html:lang(ka) .register-btn-box button{
         font-size: 16px;
     }
-    header{
-        position: sticky;
-        top: 0;
-        z-index: 999;
-        background-color: #fff;
-    }
+   
     .logo-img{
         width: 130px;
         height: 70px;
@@ -498,6 +816,11 @@
         top: 25px;
         right: 30px;
     }
+    .slider-click-h   {
+        width: 52px;
+        height: 52px;
+    }
+     
     .guestpop{
         padding: 8px 6px 5px 6px;
     }
@@ -562,6 +885,20 @@
         --read-more: 12px;
         --see-all: 12px;
         --text-tt: 12px;
+    }
+    .burger-box{
+        top: 98px;
+    }
+    .b-logo-img{
+        width: 115px;
+        height: 59px;
+        margin-right: initial;
+    }
+    .b-pesron-sub-box li p, .b-person-submenu a, .b-a, .b-sub-child-menu a, .b-log-in-box a{
+        font-size: 16px;
+    }
+    .b-logo-text{
+        max-width: 183px;
     }
     .offerssection {
         margin-bottom: 35px;
@@ -664,6 +1001,20 @@
         top: 15px;
         right: 15px;
     }
+    .slider-click-h   {
+        width: 30px;
+        height: 30px;
+    }
+    .slider-click-h   a svg {
+        width: 20px;
+    }
+    .click-heart{
+        right: 8px; 
+    }
+    .click-heart button img, .click-heart a svg{
+        width: 27px;
+    }
+     
     .guestpop {
         padding: 2px 4px 2px 4px;
     }
