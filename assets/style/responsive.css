@@ -62,7 +62,9 @@
         --padding-b: 70px;
         --slider-title: 22px;
         --title-font: 28px;
+        --text-t: 18px;
     }
+
     .logo-img {
         width: 180px;
         height: 100px;
@@ -158,6 +160,18 @@
     .footer-menu-links a{
         width: calc((100%-120px)/4);
     }
+    /* About Page */
+
+    .about-gall-item{
+        height: 250px;
+    }
+
+    /* About Page */
+    /* Submenu Page */
+    .submenu-page-item{
+        width: calc((100% / 3) - 20px );
+    }
+    /* Submenu page */
 }
 
 @media (max-width: 1199px){
@@ -287,6 +301,34 @@
     html:lang(ka) .create span{
         font-size: 16px;
     }
+    /* About Page */
+    .about-gall-item {
+        width: calc((100% / 4) - 23px);
+    }
+    /* About Page */
+    /* Submenu Page */
+    .submenu-page-box {
+        gap: 30px 20px;
+    }
+    .submenu-page-item{
+        width: calc((100% / 3) - 14px );
+        height: 180px;
+    }
+    .circle-4, .circle-5{
+        left: -43%;
+    }
+    .circle-5 {
+        left: -41%;
+    }
+    .dot-4:after{
+        top: 130px;
+        right: -11px;
+    }
+    .submenu-page-item span{
+        font-size: 22px;
+        line-height: 32px;
+    }
+    /* Submenu page */
 }
 
 @media(max-width:991px){
@@ -318,7 +360,7 @@
     }
     .burger-box {
         display: initial;
-        left: 100%;
+        left: -100%;
         transition: 0.4s;
         width: 100%;
         position: absolute;
@@ -367,10 +409,11 @@
     }
     
     .burger-menu{
-        width: 100%;
         display: flex;
         flex-direction: column;
-        height: 100vh;
+        height: calc(100vh - 101px);
+        padding-bottom: 40px;
+        width: 100%;
     }
     .burger-logo-box{
         display: flex;
@@ -720,6 +763,44 @@
         height: 81px;
         margin-bottom: 30px;
     }
+     /* About Page */
+     .about-gallery{
+        gap: 20px;
+     }
+     .about-gall-item {
+        width: calc((100% / 4) - 15px);
+        height: 220px;
+    }
+    .news-link-side h2{
+        line-height: 24px;
+        height: 48px;
+        font-size: 16px;
+    }
+    
+    /* About Page */
+    /* Submenu Page */
+    .submenu-page-box {
+        gap: 30px 20px;
+    }
+    .submenu-page-item{
+        width: calc((100% / 2) - 14px );
+        height: 180px;
+    }
+    .circle-4, .circle-5{
+        left: -43%;
+    }
+    .circle-5 {
+        left: -41%;
+    }
+    .dot-4:after{
+        top: 130px;
+        right: -11px;
+    }
+    .submenu-page-item span{
+        font-size: 20px;
+        line-height: 28px;
+    }
+    /* Submenu page */
 }
 @media(max-width:767px){
     :root{
@@ -737,6 +818,8 @@
         --nav-fonts: 16px;
         --banner-height: 400px;
         --about-text: 18px;
+        --pagination-font: 14px;
+        --brc-font: 12px;
     }
     .offerssection {
         margin-bottom: 40px;
@@ -861,6 +944,65 @@
         margin-top: 30px;
         flex-direction: column;
     }
+    /* About page */
+
+    .about-gallery {
+        gap: 20px 12px;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-gall-item {
+        width: calc((100% / 3) - 8px);
+        height: 126px;
+    }
+    .about-news-links {
+        gap: 20px 15px;
+    }
+    .n-item2 {
+        width: calc((100% / 2) - 8px);
+    }
+    .pagination {
+        margin-top: 30px;
+    }
+    .pagination li {
+        margin-right: 12px;
+    }
+    .pagination li a{
+        margin: 0 7px;
+    }
+    /* About page */
+    .b-r-c{
+        padding: 6px 0;
+        padding-bottom: 9px;
+        padding-left: 10px;
+    }
+    .b-r-c li{
+        margin-right: 38px;
+    }
+    .b-r-c li a span svg{
+        height: 20px;
+        width: 24px;
+    }
+    .b-r-c li:before{
+        top: 14px;
+        left: -22px;
+    }
+    /* Submenu Page */
+    .submenu-page-box {
+        gap: 30px 20px;
+    }
+    .submenu-page-item{
+        width: calc((100% / 1) - 0px );
+        height: 180px;
+    }
+    .circle-4, .circle-5 {
+        left: -28%;
+    }
+    .circle-5 {
+        left: -27%;
+    }
+ 
+    /* Submenu page */
 }
 
 
@@ -1157,4 +1299,30 @@
         max-height: 54px;
         margin-bottom: 10px;
     }
+     /* About Page */
+     .about-gall-item {
+        height: 106px;
+    }
+    /* About Page */
+    /* Submenu page */
+    .submenu-page-box{
+        gap: 15px 20px;
+    }
+    .submenu-page-item span{
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .circle-4, .circle-5{
+        top: -21px;
+        left: -36%;
+        transform: rotate(10deg);
+    }
+    .circle-5{
+        top: -8px;
+        left: -34%;
+    }
+    .submenu-page-item:hover .circle-4 {
+        transform: rotate(-50deg);
+    }
+    /* Submenu page */
 }
