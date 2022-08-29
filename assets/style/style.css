@@ -292,6 +292,8 @@ html:lang(ka) .shadow-effect{
     gap: 50px;
 }
 .navigation-box ul{
+    margin: 0;
+    padding: 0;
     display: flex;
     gap: 50px;
 }
@@ -518,6 +520,11 @@ html:lang(ka) .shadow-effect{
     max-width: 100%;
     overflow: hidden;
     text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+}
+.important-title a {
+    width: fit-content;
 }
 .important-title h1{
     margin: 0;
@@ -1339,6 +1346,7 @@ html:lang(ka) .shadow-effect{
     border-bottom-right-radius: 50px;
     border-top-right-radius: 50px;
     margin-bottom: 30px;
+    padding-right: 30px;
 }
 .b-r-c li{
     margin-right: 54px;
@@ -1499,11 +1507,14 @@ html:lang(ka) .shadow-effect{
     height: 56px;
     width: 180px;
 }
-.favourite-click-box a {
+.favourite-click-box a, .favourite-click-box form button {
     font-size: 18px;
     font-family: 'Calibri';
     text-transform: capitalize;
     color: #1B1B1B;
+}
+.favourite-click-box form{
+    margin: 0;
 }
 .left-heart{
     position: relative;
@@ -1643,7 +1654,7 @@ html:lang(ka) .shadow-effect{
     position: absolute;
 }
 .offers-link-item .time p{
-    margin: 0;
+    margin: 0 20px;
     padding: 20px 40px;
     background-color: #0094D9;
     border-radius: 30px;
@@ -2017,6 +2028,10 @@ html:lang(ka) .shadow-effect{
     border-radius: 8px;
     overflow: hidden;
 }
+.research-det-img a{
+    width: 100%;
+    height: 100%;
+}
 .research-det-img img{
     width: 100%;
     height: 100%;
@@ -2118,7 +2133,7 @@ html:lang(ka) .shadow-effect{
     margin-bottom: 50px;
 }
 .flex-column a{
-    color: #3063AA;
+    color: #3063AA!important;
     font-size: var(--text-tt);
     line-height: 28px;
     font-family: 'Calibri';
@@ -2369,10 +2384,20 @@ html:lang(ka) .shadow-effect{
     flex-wrap: wrap;
     gap: 30px 30px;
 }
+.contact-box-item{
+    width: calc((100% / 2) - 15px);
+}
+.contact-box-item label{
+    font-size: var(--text-tt);
+    color: #1B1B1B;
+    line-height: 26px;
+    font-family: 'Calibri';
+    display: none;
+}
 .left-contact-box form input{
     border: none;
     outline: none;
-    width: calc((100% / 2) - 15px);
+    width: 100%;
     height: 50px;
     padding-left: 30px;
     padding-right: 30px;
@@ -2382,7 +2407,9 @@ html:lang(ka) .shadow-effect{
     color: #1B1B1B;
     line-height: 26px;
     font-family: 'Calibri';
-   
+}
+.contact-box-item-2{
+    width: 100%;
 }
 .left-contact-box form textarea{
     width: 100%;
@@ -2391,7 +2418,6 @@ html:lang(ka) .shadow-effect{
     color: #1B1B1B;
     line-height: 26px;
     font-family: 'Calibri';
-    text-transform: capitalize;
     padding-left: 40px;
     padding-top: 25px;
     border: none;
@@ -3377,6 +3403,8 @@ html:lang(ka) .person-info-save{
 
 
 .alert-success {
+    border-radius: 9px;
+    font-family: 'Calibri';
     width: 35% !important;
     height: 200px !important;
     position: initial !important;
@@ -3388,9 +3416,9 @@ html:lang(ka) .person-info-save{
     color: #fff !important;
     gap: 13px !important;
     flex-direction: row-reverse !important;
-    box-shadow: 0px 0px 15px -1px rgba(100,100,100,0.57);
--webkit-box-shadow: 0px 0px 15px -1px rgba(100,100,100,0.57);
--moz-box-shadow: 0px 0px 15px -1px rgba(100,100,100,0.57);
+    box-shadow: 0px 0px 15px -1px rgb(100 100 100 / 57%);
+    -webkit-box-shadow: 0px 0px 15px -1px rgb(100 100 100 / 57%);
+    -moz-box-shadow: 0px 0px 15px -1px rgba(100,100,100,0.57);
 }
 .favourite-click-box {
     position: relative;
@@ -3408,7 +3436,8 @@ position: fixed;
 top: 0;
 }
 .alert strong{
-    color: #646464;
+    color: #1b1b1b;
+    font-weight: 400;
 }
 .time-3{
     position: relative;
@@ -3481,6 +3510,19 @@ top: 0;
 .hidden-title-3{
     display: none;
 }
+
+.favoritesbut{
+    border: none;
+    padding: 11px 30px;
+    background: #FBFBFB!important;
+    border-radius: 30px;
+ 
+    font-size: 18px;
+    font-family: 'Calibri';
+    text-transform: capitalize;
+    color: #1B1B1B;
+}
+
 .guestpop{
     background: #fff;
     padding: 14px 10px 7px 10px;
@@ -3563,7 +3605,8 @@ html:lang(ka) .reseaches-det-box h2,
 html:lang(ka) .offers-register-box .title h2,
 html:lang(ka) .news-link-side h2,
 html:lang(ka) .navigation-box ul li .nav-links,
-html:lang(ka) .share-box h5{
+html:lang(ka) .share-box h5,
+html:lang(ka) .n-item3 .hidden-title{
     font-family: 'ALK Sanet';
     font-weight: 500;
 }
