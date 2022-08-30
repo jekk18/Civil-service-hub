@@ -67,6 +67,10 @@
     .favourites-result-item{
         padding: 25px 40px;
     }
+     
+    .register-list-item{
+        height: 361px;
+    }
 }
 @media (max-width: 1399px){
     :root {
@@ -250,6 +254,12 @@
         padding: 0 10px;
         padding-left: 10px;
         font-size: 15px;
+    }
+    .person-info-box {
+        padding: 0 8%;
+    }
+    .favourites-result-box{
+        margin-top: 40px;
     }
 }
 
@@ -484,7 +494,9 @@
     .favourites-result-item:nth-child(3n+1) {
         background-color: #F8F8F8;
     }
-     
+    .person-info-box {
+        padding: 0 0%;
+    }
 }
 
 @media(max-width:991px){
@@ -677,6 +689,7 @@
         cursor: pointer;
     }
     .b-pesron-sub-box li p{
+        margin-top: 0;
         color: #3063AA;
         font-size: 18px;
         font-weight: bold;
@@ -709,7 +722,7 @@
         transform: rotate(0);
     }
     .b-person-submenu{
-        margin-top: 20px;
+        margin-top: 0;
         padding-left: 10%;
         max-height: 0;
         overflow: hidden;
@@ -997,6 +1010,12 @@
     .h-circle img{
         width: 32px;
     }
+    .h-circle .dddd{
+        height: 33px;
+    }
+    .h-circle .dddd img{
+         width: 35px;
+    }
     .h-circle #unauthbutt{
         height: 29px;
     }
@@ -1032,6 +1051,8 @@
         font-size: 16px;
         line-height: 24px;
         width: 70%;
+        max-height: 72px;
+        overflow: hidden;
     }
     .activebutton, .favoritesbut{
         padding: 7px 11px;
@@ -1044,22 +1065,26 @@
         height: 65px;
         line-height: 22px;
     }
-    .right-t.block span:nth-child(2) svg{
+    .right-t  span  svg{
+        height: 27px;
+    }
+    .right-t.block span  svg{
         height: 27px;
     }
     .r-other-news{
         gap: 30px;
     }
     .news-fancy-item {
-        width: calc((100% / 2) - 10px);
+        width: calc((100% / 2) - 0px);
         height: 193px;
         margin-top: 30px;
     }
-    .row-slider-2{
-        gap: 20px;
-    }
+     
     .share-box{
         margin-top: 30px;
+    }
+    .n-item2 {
+        width: calc((100% / 3) - 20px);
     }
     /* News det  */
     /* search */
@@ -1133,6 +1158,47 @@
     .favourites-result-box{
         margin-top: 40px;
     }
+    .personal-info-top{
+        margin-bottom: 40px;
+    }
+    .person-form{
+        gap: 30px 30px;
+    }
+    .p-input-item {
+        width: calc((100% / 2) - 15px );
+    }
+    .favourites-result-item h2{
+        height: 45px;
+        line-height: 22px;
+        font-size: 16px;
+    }
+    .favourites-result-item .event-link{
+        margin-bottom: 22px;
+    }
+    .register-list-item {
+        height: 337px;
+    }
+    /* offers-det */
+    .news-fancy-gallery2 .news-fancy-item {
+        width: calc((100% / 3) - 0px);
+        margin-top: 30px;
+    }
+    .offers-register {
+        margin-top: 40px;
+    }
+    .background-trans{
+        background-color: transparent;
+    }
+    .v-register{
+        width: calc((100% / 2) - 20px);
+    }
+    .offers-register-box form{
+        gap: 30px 0;
+    }
+    .offers-det-boxs {
+        margin-bottom: 50px;
+    }
+    /* offers-det */
 }
 @media(max-width:767px){
     :root{
@@ -1520,6 +1586,56 @@
     .search-form{
         padding: 0 17px;
     }
+    .personal-info-top {
+        margin-bottom: 30px;
+    }
+    .personal-info-top h1{
+        font-size: 16px;
+    }
+    .r-r-info{
+        gap: 30px;
+    }
+    .r-r-info h3{
+        font-size: 14px;
+    }
+    .r-r-info h4{
+        font-size: 14px;
+    }
+    .p-input-item label{
+        font-size: 16px;
+    }
+    /* offers-det */
+    .l-img{
+        height: 260px;
+        width: 100%;
+    }
+    .l-img img{
+        width: 100%;
+        height: 100%;
+    }
+    .news-fancy-gallery2 .news-fancy-item {
+        width: calc((100% / 3) - 14px);
+        margin-top: 25px;
+        height: 190px;
+    }
+    .gap-offers {
+        gap: 0 20px;
+    }
+    .offers-det-boxs {
+        margin-bottom: 50px;
+    }
+    #upload-btn span svg{
+        height: 40px;
+        width: 33px;
+    }
+    #text{
+        margin-left: 10px;
+        font-size: 14px;
+    }
+    .download-file{
+        left: 40.5%;
+    }
+    /* offers-det */
 }
 
 
@@ -1552,6 +1668,9 @@
         width: 115px;
         height: 59px;
         margin-right: initial;
+    }
+    .b-person-submenu{
+        margin-bottom: 20px;
     }
     .b-pesron-sub-box li p, .b-person-submenu a, .b-a, .b-sub-child-menu a, .b-log-in-box a{
         margin: 0;
@@ -1705,6 +1824,12 @@
         height: 26px;
         width: 23px;
     }
+    .h-circle .dddd {
+        height: 22px;
+    }
+    .h-circle .dddd img {
+        width: 23px;
+    }
     .time{
         top: 15px;
         right: 25px;
@@ -1820,6 +1945,10 @@
         max-height: 54px;
         margin-bottom: 10px;
     }
+    .h-png-22 {
+        width: 22px;
+        height: 19px;
+    }
      /* About Page */
      .about-gall-item {
         height: 106px;
@@ -1934,9 +2063,7 @@
         overflow: initial;
 
     }
-    .row-slider-2{
-        gap: 15px;
-    }
+    
     .news-det-page {
         overflow-x: hidden;
     }
@@ -2224,4 +2351,178 @@
         margin-top: -2px;
     }
     /* Favourite */
+    .change-password-pop h1, .recover-password h1{
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+    .change-password-pop{
+        width: 100%;
+        left: 0;
+        height: 448px;
+        padding: 49px 60px;
+    }
+    .change-password-pop form, .recover-password form{
+        gap: 25px;
+    }
+    .log-in-item label, .forgot-password-form label{
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 10px;
+    }
+    .log-in-item input, .forgot-password-form input{
+        height: 35px;
+        font-size: 14px;
+    }
+    .password-change-btn, .login-btn, .sent-forgot-pas{
+        height: 40px;
+        font-size: 16px;
+    }
+    .active-change-password{
+        position: absolute;
+    }
+    /* Profile */
+    .personal-info-top {
+        flex-wrap: wrap;
+    }
+    .personal-info-top h1{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .r-r-info h3{
+        display: flex;
+        flex-direction: column;
+        text-align: inherit;
+    }
+    .r-r-info{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 10px;
+    }
+    .personal-info-top {
+        margin-bottom: 25px;
+    }
+    .p-input-item {
+        width: calc((100% / 1) - 0px );
+    }
+    .p-input-item label {
+        line-height: 18px;
+    }
+    .p-input-item input {
+        font-size: 14px;
+        height: 38px;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+    .person-form {
+        gap: 20px 20px;
+    }
+    .person-info-save {
+        width: 150px;
+        height: 40px;  
+        font-size: 14px;
+    }
+    /* Profile */
+    .registration-date .date a {
+        width: 100px;
+        height: 35px;
+        font-size: 12px;
+    }
+    .offers-det-page {
+        overflow-x: hidden;
+       }
+    .registration-date .date span h2, .registration-date .date span h5{
+        font-size: 14px;
+        line-height: 16px;
+    }
+   /* offers-det */
+   .offers-left-t {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .offers-left-t p{
+        padding: 12px 34px;
+        margin-left: 0;
+    }
+    .offers-left-t .share-box {
+        margin-top: 22px;
+        margin-left: 0;
+    }
+    .background-trans{
+        padding: 0;
+    }
+    .background-trans a{
+        width: 100px;
+        height: 35px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: -56px;
+    }
+    .offers-register {
+        margin-top: 25px;
+    }
+    .register-btn, .submit-btn {
+        height: 35px; 
+        font-size: 12px;
+        padding: 0 26px;
+    }
+    .offers-det-boxs {
+        margin-bottom: 30px;
+    }
+    .v-register, .v-upload{
+        width: 100%;
+    }
+    .offers-register-box .title {
+        margin-bottom: 30px;
+    }
+    .valid-inputs { 
+        gap: 28px;
+    }
+    .v-register label, .v-upload label{
+        margin-bottom: 10px;
+    }
+    .upload-files{
+        gap: 28px 0;
+        flex-wrap: wrap;
+    }
+    .v-register input{
+        height: 38px;
+        padding-left: 18px;
+        font-size: 14px;
+    }
+    .offers-register-box form{
+        gap: 28px 0;
+    }
+     
+    .v-upload input[type="file"]{
+        font-size: 14px;
+        border-radius: 10px;
+        height: 76px;
+    }
+    .v-upload textarea{
+        font-size: 14px;
+        padding: 17px;
+        border-radius: 10px;
+        height: 76px;
+    }
+    #upload-btn{
+        margin-top: 2px;
+    }
+    #upload-btn span svg {
+        height: 32px;
+        width: 27px;
+    }
+    #text{
+        font-weight: 400;
+    }
+    .download-file {
+        left: 41.5%;
+    }
+    .download-file a {
+        font-size: 14px;
+    }
+   /* offers-det */
 }

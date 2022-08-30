@@ -1236,6 +1236,15 @@ html:lang(ka) .shadow-effect{
 .slider-click-h.block span:nth-child(2){
     display: block;
 }
+.slider-click-h form  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.h-png-22{
+    width: 40px;
+    height: 37px;
+}
 .offers-text{
     position: absolute;
     left: 0;
@@ -1568,19 +1577,21 @@ html:lang(ka) .shadow-effect{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-     
+}
+.gap-offers{
+    gap: 0 32px;
 }
 .row-slider-2{
     width: 100%;
-    gap: 30px;
+    /* gap: 30px; */
 }
 .news-fancy-item{
-    width: calc((100% / 3) - 24px);
+    width: calc((100% / 3) - 0px);
     height: 203px;
     margin-top: 40px;
 }
 .news-fancy-gallery2 .news-fancy-item{
-    width: calc((100% / 4) - 24px);
+    width: calc((100% / 4) - 0px);
     height: 222px;
     margin-top: 40px;
 }
@@ -1876,6 +1887,7 @@ html:lang(ka) .shadow-effect{
 }
 .v-uploaded .download-file{
     display: block;
+    margin-top: -16px;
 }
 .download-file a{
     font-size: 16px;
@@ -1916,8 +1928,9 @@ html:lang(ka) .shadow-effect{
     margin-top: 5px;
 }
 #text{
+    margin: 0;
     margin-left: 25px;
-    margin-top: 0px;
+    margin-top: 0;
     font-size: 16px;
     font-weight: bold;
     color: #1B1B1B;
@@ -2609,7 +2622,7 @@ html:lang(ka) .shadow-effect{
     line-height: 26px;
     font-weight: bold;
     color: #040503;
-    max-height: 56px;
+    height: 56px;
     overflow: hidden;
     font-family: 'Segoe UI';
 }
@@ -2699,6 +2712,7 @@ html:lang(ka) .shadow-effect{
     font-family: 'Segoe UI';
     margin-bottom: 10px;
     text-transform: capitalize;
+    height: initial;
 }
 .registration-date .date span h5{
     margin: 0;
@@ -3400,8 +3414,15 @@ html:lang(ka) .person-info-save{
     margin-bottom: 80px;
 }
 
-
-
+.dddd{
+    width: 38px;
+    height: 35px;  
+}
+.dddd img{
+    width: 100%;
+    height: 100%;
+    position: initial;
+}
 .alert-success {
     border-radius: 9px;
     font-family: 'Calibri';
